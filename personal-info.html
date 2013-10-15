@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Detail Admin - My Info</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet">
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="css/compiled/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled/elements.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled/icons.css">
+
+    <!-- libraries -->
+    <link rel="stylesheet" type="text/css" href="css/lib/font-awesome.css">
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/compiled/personal-info.css" type="text/css" media="screen" />
+
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+    <!-- navbar -->
+    <header class="navbar navbar-inverse" role="banner">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="dashboard.html"><img src="img/logo.png"></a>
+        </div>
+        <nav class="collapse navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav">
+                <li><a href="dashboard.html">Dashboard</a></li>
+                <li><a href="get_status.html">Get Status</a></li>
+                <li><a href="new_incident.html">New Incident</a></li>
+                <li><a href="new_request.html">New Request</a></li>
+                <li><a href="knowledge.html">Knowledge Base</a></li>
+                <li><a href="office.html">Office</a></li>
+            </ul>
+        </nav>        
+    </header>
+    <!-- end navbar -->
+
+	<!-- main container .wide-content is used for this layout without sidebar :)  -->
+    <div class="content wide-content">
+        <div class="settings-wrapper" id="pad-wrapper">
+            <div class="row">
+                <!-- avatar column -->
+                <div class="col-md-3 col-md-offset-1 avatar-box">
+                    <div class="personal-image">
+                        <img src="img/personal-info.png" class="avatar img-circle">
+                        <!--<p>Nina Borisova</p>-->
+                        
+                        </div>
+                </div>
+
+                <!-- edit form column -->
+                <div class="col-md-7 personal-info">
+                    <div class="alert alert-info">
+                        <i class="icon-lightbulb"></i>
+                        Below is the information from your personal profile. If you find that some changes required, please update the corresponding filds and click '<b>Request Update</b>' button.
+                    </div>
+                    <h5 class="personal-title">Personal info</h5>
+
+                    <form class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">First name:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control inline-input" type="text" value="Joanna" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Last name:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control inline-input" type="text" value="Mare" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Title:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control inline-input" type="text" value="Sr. Business Analyst" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Department:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control inline-input" type="text" value="Accounting" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Office:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control inline-input" type="text" value="Bethesda" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Company:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control inline-input" type="text" value="ACAS" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Time Zone:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control inline-input" type="text" value="US/Eastern" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Business Phone:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control inline-input" type="text" value="+1 (301) 841-1397" />
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Mоbile Phone:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control inline-input" type="text" value="+1 (917) 515-6206" />
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-lg-2 control-label">Email:</label>
+                            <div class="col-lg-8">
+                                <input class="form-control inline-input" readonly="readonly"  type="text" value="joanna.mare@americancapital.com" />
+                            </div>
+                        </div>
+
+                        <div class="actions">
+                            <input type="button" class="btn-glow primary" value="Request Update">
+                            <span>OR</span>
+                            <input type="reset" value="Cancel" class="reset">
+                        </div>
+                    </form>
+                </div>
+            </div>            
+        </div>
+    </div>
+    <!-- end main container -->
+
+
+	<!-- scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/theme.js"></script>
+</body>
+</html>

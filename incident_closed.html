@@ -1,0 +1,299 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Incident Details</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet">
+
+    <!-- libraries -->
+   <link href="css/lib/uniform.default.css" type="text/css" rel="stylesheet">
+    <link href="css/lib/select2.css" type="text/css" rel="stylesheet">
+    <link href="css/lib/bootstrap.datepicker.css" type="text/css" rel="stylesheet">
+    <link href="css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="css/compiled/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled/elements.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled/icons.css">
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/compiled/user-profile.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/compiled/form-showcase.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/compiled/new-user.css" type="text/css" media="screen">
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <style>
+        pre
+        {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 12px;
+        color: #333333;
+        display: block;
+        padding: 9.5px;
+        margin: 0 0 10px;
+        white-space: pre-wrap;
+        line-height: 1.428571429;
+        background-color: #f5f5f5;
+        border-radius: 4px;
+        }
+        
+     .snlabel 
+    {
+        float:left;
+        font-size:12px;
+        color:#777e86;
+        margin-left:20px;
+      }
+    
+    .sndata 
+    {
+    margin: 0 0 15px 140px;
+    font-size:12px;
+    color:#333333;
+    }
+     .sndatatable 
+    {
+    margin: 0 0 15px 140px;
+    }
+    .comments
+    {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    margin-top: 0px;
+    margin-left:135px;
+    padding-bottom: 10px;
+    line-height: 135%;
+    color: #444;
+    }
+    
+    tr.comment>td {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: dotted 1px #ddd;
+}
+.owner 
+{
+color:rgb(66, 139, 202);
+}
+.time
+{
+color: #999;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- navbar -->
+    <header class="navbar navbar-inverse" role="banner">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="dashboard.html"><img src="img/logo.png"></a>
+        </div>
+        <ul class="nav navbar-nav pull-right hidden-xs">
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs hidden-sm" data-toggle="dropdown">
+                    Joanna Mare
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="personal-info.html">Personal info</a></li>
+                    <li><a href="signin_c.html">Logout</a></li>
+
+                </ul>
+            </li>
+            <li class="settings hidden-xs hidden-sm">
+                <a href="signin_c.html" role="button">
+                    <i class="icon-share-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div id="sidebar-nav">
+        <ul id="dashboard-menu">
+            <li class="active">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="dashboard.html">
+                    <i class="icon-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+              <li>
+                <a href="get_status.html">
+                    <i class="icon-check"></i>
+                    <span>Check Status</span>
+                </a>
+            </li>
+             <li>
+                <a href="new_incident.html">
+                    <i class="icon-bolt"></i>
+                    <span>New Incident</span>
+                </a>
+            </li>   
+            
+            <li>
+                <a href="gallery.html">
+                    <i class="icon-briefcase"></i>
+                    <span>New Request</span>
+                </a>
+            </li>
+             <li>
+                <a href="knowledge.html">
+                    <i class="icon-lightbulb"></i>
+                    <span>Knowledge Base</span>
+                </a>
+            </li>
+             <li>
+                <a href="calendar.html">
+                    <i class="icon-calendar"></i>
+                    <span>Office</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <!-- end sidebar -->
+
+
+	<!-- main container -->
+    <div class="content">
+        
+      
+        <div id="pad-wrapper" class="user-profile">
+            <!-- header -->
+            <div class="row header">
+                <div class="col-md-8">
+                    <img src="img/log.png" class="avatar img-circle">
+                    <h3 class="name">Incident</h3>
+                    <span class="area">INC0019205</span>
+                </div>
+                </div>
+
+            <div class="row profile">
+                
+                <div class="col-md-9 bio">
+                  <div class="profile-box">
+            <!-- FORM--------------------------------------------------------------------------------- -->
+            <div class="snlabel">Number:</div> <div class="sndata">INC0019205</div>
+            <div class="snlabel">Caller:</div> <div class="sndata">Alex Grau</div>
+            <div class="snlabel">Opened:</div> <div class="sndata">2013-09-02 15:55:26</div>
+            <div class="snlabel">Category:</div> <div class="sndata">Hardware</div>
+            <div class="snlabel">Subcategory:</div> <div class="sndata">Printer/Copier/Scanner</div>
+            <div class="snlabel">Impact:</div> <div class="sndata">2 - Medium</div>
+            <div class="snlabel">Urgency:</div> <div class="sndata">3 - Medium</div>
+            <div class="snlabel">Priority:</div> <div class="sndata">3 - Moderate</div>
+            <div class="snlabel">Assigned group:</div> <div class="sndata">Service Desk</div>
+            <div class="snlabel">Assigned to:</div> <div class="sndata">Dain Tailor</div>
+            <div class="snlabel">Acknowledgement:</div> <div class="sndata">2013-09-23 13:41:27 by Dain Tailor</div>
+            <div class="snlabel">Incidnet State:</div> <div class="sndata"><span class="label label-success">Closed</span></div>
+            <div class="snlabel">Close Notes:</div> <div class="sndata">New printer has been installed. –&nbsp;<span class="owner">Dain Taylor</span> <span class="time">Oct 10'13 at 8:31</span></div>
+            <div class="snlabel">Short Description:</div> <div class="sndata"><span>Scanner not working</span></div>
+            <div class="snlabel">Description:</div> <div class="sndata"><span>My home office Dell MFP is no longer scanning.<br />
+This is an on-going issue that someone fixed before (in the last three months).</br>
+</br>Thank you,</br></br>Alexander Grau</br>American Capital, Ltd.</br>(305) 710-7570</br></span></div>
+            <div class="snlabel">Comments:</div>
+             <!-- COMMENTS --------------------------------------------------------------------------------- -->
+  <div class="comments">
+		    <table>
+			    <tbody>
+
+    <tr class="comment">
+
+        <td class="comment-text">
+            
+<div style="display: block;" class="comment-body">
+	<span class="comment-copy">I have talked to Rajni and updated her on the situation with Alex's printer and she has approved the ordering of a new printer for Alex from HP. I am looking at HP printers to determine a good one to use across the company.</span>	–&nbsp;
+		<span class="owner">Dain Taylor</span> <span class="time">Oct 14 '13 at 10:31</span>
+</div>
+
+        </td>
+    </tr>
+        <tr class="comment">
+             <td class="comment-text">
+            
+<div style="display: block;" class="comment-body">
+	<span class="comment-copy">I emailed Alex and he stated that the best time to look into this once again is on Friday.</span>	–&nbsp;
+		<span class="owner">Dain Taylor</span> <span class="time">Sept 23 '13 at 13:45</span>
+</div>
+
+    </td>
+    </tr>
+    <tr class="comment">
+             <td class="comment-text">
+            
+<div style="display: block;" class="comment-body">
+	<span class="comment-copy">Acknowledged by Dain Taylor</span>	–&nbsp;
+		<span class="owner">Dain Taylor</span> <span class="time">Sept 23 '13 at 8:31</span>
+</div>
+
+    </td>
+    </tr>
+			    </tbody>
+		    </table>
+	    </div>
+
+
+                </div>
+                </div>
+         
+                <!-- side address column -->
+                <div class="col-md-3 col-xs-12 address pull-right">
+                    <h6>Attachments</h6>
+                    <ul>
+                        <li style="margin:0 0 5px 0;"><a href="">Example.xls</a></li>
+                        <li style="margin:0 0 5px 0;"><a href="">Readme.pdf</a></li>
+                        </ul>
+                                           
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main container -->
+
+
+	<!-- scripts -->
+    <script src="js/wysihtml5-0.3.0.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.datepicker.js"></script>
+    <script src="js/jquery.uniform.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/theme.js"></script>
+    <!-- call this page plugins -->
+    <script type="text/javascript">
+        $(function () {
+
+            // add uniform plugin styles to html elements
+            $("input:checkbox, input:radio").uniform();
+            // select2 plugin for select elements
+            $(".select2").select2({
+                placeholder: "Select a State"
+            });
+
+            // datepicker plugin
+            $('.input-datepicker').datepicker().on('changeDate', function (ev) {
+                $(this).datepicker('hide');
+            });
+                   });
+    </script>
+</body>
+</html>

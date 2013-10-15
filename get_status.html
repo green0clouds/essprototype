@@ -1,0 +1,432 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Check Status</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet">
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="css/compiled/layout.css">
+        <link rel="stylesheet" type="text/css" href="css/compiled/elements.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled/icons.css">
+
+    <!-- libraries -->
+    <link href="css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+    <link href="css/lib/jquery.dataTables.css" type="text/css" rel="stylesheet" />
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/compiled/datatables.css" type="text/css" media="screen" />
+     <link rel="stylesheet" href="css/compiled/user-profile.css" type="text/css" media="screen" />
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- navbar -->
+    <header class="navbar navbar-inverse" role="banner">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="dashboard.html"><img src="img/logo.png"></a>
+        </div>
+        <ul class="nav navbar-nav pull-right hidden-xs">
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs hidden-sm" data-toggle="dropdown">
+                    Joanna Mare
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="personal-info.html">Personal info</a></li>
+                    <li><a href="signin_c.html">Logout</a></li>
+
+                </ul>
+            </li>
+            <li class="settings hidden-xs hidden-sm">
+                <a href="signin_c.html" role="button">
+                    <i class="icon-share-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div id="sidebar-nav">
+        <ul id="dashboard-menu">
+            <li>
+                <a href="dashboard.html">
+                    <i class="icon-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+            <li class="active">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="get_status.html">
+                    <i class="icon-check"></i>
+                    <span>Check Status</span>
+                </a>
+            </li>   
+            <li>
+                <a href="new_incident.html">
+                    <i class="icon-bolt"></i>
+                    <span>New Incident</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="gallery.html">
+                    <i class="icon-briefcase"></i>
+                    <span>New Request</span>
+                </a>
+            </li>
+            <li>
+                <a href="knowledge.html">
+                    <i class="icon-lightbulb"></i>
+                    <span>Knowledge Base</span>
+                </a>
+            </li>
+             <li>
+                <a href="office.html">
+                    <i class="icon-calendar"></i>
+                    <span>Office</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- end sidebar -->
+
+
+	<!-- main container -->
+    <div class="content">
+
+        <!-- upper main stats -->
+       
+        <!-- end upper main stats -->
+
+<div id="pad-wrapper" class="user-profile">
+            <!-- header -->
+            <div class="row header">
+                <div class="col-md-8">
+                    <img src="img/log.png" class="avatar img-circle">
+                    <h3 class="name">Check Status</h3>
+                    <span class="area">Status information about your incidents and requests</span>
+                </div>
+            </div>
+            <div class="row profile">
+                <!-- bio, new note & orders column -->
+                <div class="col-md-9 bio">
+                    <div class="profile-box">
+                        <!-- biography -->
+                        <div class="col-md-12 section">
+                            <h6>INCIDENTS | <a href="">REQUESTS</a> | <a href="">OFFICE ADMINISTRATION REQUESTS</a></h6>
+                            <p>You have 6 active Incidents. Please check check details below and contact HelpDesk if you have any questions.</p>
+                            <p>Latest ticket has been updated on Sep 30, 2013.</p>
+                             </div>
+                  
+                    <div class="row">
+                <div class="col-md-12">
+
+                    <table cellpadding="0" cellspacing="0" border="0" class="" id="example">
+                        <thead>
+                            <tr role="row">
+                                <th tabindex="0" rowspan="1" colspan="1">Number
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Date
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Short Description
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Assigned To
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Status
+                                </th>
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td>Trident</td>
+                                <td>Internet
+                                     Explorer 4.0</td>
+                                <td>Win 95+</td>
+                                <td class="center"> 4</td>
+                                <td class="center"><span class="label label-info">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Trident</td>
+                                <td>Internet
+                                     Explorer 5.0</td>
+                                <td>Win 95+</td>
+                                <td class="center">5</td>
+                                <td class="center"><span class="label label-info">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Trident</td>
+                                <td>Internet
+                                     Explorer 5.5</td>
+                                <td>Win 95+</td>
+                                <td class="center">5.5</td>
+                                <td class="center"><span class="label label-info">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Trident</td>
+                                <td>Internet
+                                     Explorer 6</td>
+                                <td>Win 98+</td>
+                                <td class="center">6</td>
+                                <td class="center"><span class="label label-info">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Trident</td>
+                                <td>Internet Explorer 7</td>
+                                <td>Win XP SP2+</td>
+                                <td class="center">7</td>
+                                <td class="center"><span class="label label-info">Active</span></td>
+                            </tr>
+                            <tr>
+                                <td>Trident</td>
+                                <td>AOL browser (AOL desktop)</td>
+                                <td>Win XP</td>
+                                <td class="center">6</td>
+                                <td class="center">A</td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Firefox 1.0</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td class="center">1.7</td>
+                                <td class="center"><span class="label label-success">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Firefox 1.5</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td class="center">1.8</td>
+                                <td class="center"><span class="label label-success">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Firefox 2.0</td>
+                                <td>Win 98+ / OSX.2+</td>
+                                <td class="center">1.8</td>
+                                <td class="center"><span class="label label-success">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Firefox 3.0</td>
+                                <td>Win 2k+ / OSX.3+</td>
+                                <td class="center">1.9</td>
+                                <td class="center"><span class="label label-success">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Camino 1.0</td>
+                                <td>OSX.2+</td>
+                                <td class="center">1.8</td>
+                                <td class="center"><span class="label label-success">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Camino 1.5</td>
+                                <td>OSX.3+</td>
+                                <td class="center">1.8</td>
+                                <td class="center"><span class="label label-success">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>Gecko</td>
+                                <td>Netscape 7.2</td>
+                                <td>Win 95+ / Mac OS 8.6-9.2</td>
+                                <td class="center">1.7</td>
+                                <td class="center"><span class="label label-success">Closed</span></td>
+                            </tr>
+                                                        <tr>
+                                <td>Presto</td>
+                                <td>Opera for Wii</td>
+                                <td>Wii</td>
+                                <td class="center">-</td>
+                                <td class="center">A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Nokia N800</td>
+                                <td>N800</td>
+                                <td class="center">-</td>
+                                <td class="center">A</td>
+                            </tr>
+                            <tr>
+                                <td>Presto</td>
+                                <td>Nintendo DS browser</td>
+                                <td>Nintendo DS</td>
+                                <td class="center">8.5</td>
+                                <td class="center"><span class="label label-success">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>KHTML</td>
+                                <td>Konqureror 3.1</td>
+                                <td>KDE 3.1</td>
+                                <td class="center">3.1</td>
+                                <td class="center"><span class="label label-success">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>KHTML</td>
+                                <td>Konqureror 3.3</td>
+                                <td>KDE 3.3</td>
+                                <td class="center">3.3</td>
+                                <td class="center"><span class="label label-success">Closed</span></td>
+                            </tr>
+                            <tr>
+                                <td>KHTML</td>
+                                <td>Konqureror 3.5</td>
+                                <td>KDE 3.5</td>
+                                <td class="center">3.5</td>
+                                <td class="center">A</td>
+                            </tr>
+                            <tr>
+                                <td>Tasman</td>
+                                <td>Internet Explorer 4.5</td>
+                                <td>Mac OS 8-9</td>
+                                <td class="center">-</td>
+                                <td class="center">X</td>
+                            </tr>
+                            <tr>
+                                <td>Tasman</td>
+                                <td>Internet Explorer 5.1</td>
+                                <td>Mac OS 7.6-9</td>
+                                <td class="center">1</td>
+                                <td class="center">C</td>
+                            </tr>
+                            <tr>
+                                <td>Tasman</td>
+                                <td>Internet Explorer 5.2</td>
+                                <td>Mac OS 8-X</td>
+                                <td class="center">1</td>
+                                <td class="center">C</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>NetFront 3.1</td>
+                                <td>Embedded devices</td>
+                                <td class="center">-</td>
+                                <td class="center">C</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>NetFront 3.4</td>
+                                <td>Embedded devices</td>
+                                <td class="center">-</td>
+                                <td class="center">A</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>Dillo 0.8</td>
+                                <td>Embedded devices</td>
+                                <td class="center">-</td>
+                                <td class="center">X</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>Links</td>
+                                <td>Text only</td>
+                                <td class="center">-</td>
+                                <td class="center">X</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>Lynx</td>
+                                <td>Text only</td>
+                                <td class="center">-</td>
+                                <td class="center">X</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>IE Mobile</td>
+                                <td>Windows Mobile 6</td>
+                                <td class="center">-</td>
+                                <td class="center">C</td>
+                            </tr>
+                            <tr>
+                                <td>Misc</td>
+                                <td>PSP browser</td>
+                                <td>PSP</td>
+                                <td class="center">-</td>
+                                <td class="center">C</td>
+                            </tr>
+                            <tr>
+                                <td>Other browsers</td>
+                                <td>All others</td>
+                                <td>-</td>
+                                <td class="center">-</td>
+                                <td class="center">U</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+                    </div>
+              </div>
+
+                <!-- side address column -->
+                <div class="col-md-3 col-xs-12 address pull-right">
+               <div class="col-md-12 chart">
+               <h5>Tickets Summary:
+                    <div id="hero-donut" style="height: 200px;"></div>    
+                <p>3 <span class="label label-info">Active</span> incidents</p>
+                <p>2 <span class="label label-success">Resolved</span> incidents</p>
+                <p>1 <span class="label label-warning">Waiting on Customer</span> incidents</p>
+                <p>37 <span class="label label-success">Closed</span> incidents</p>
+                   </h5>
+                   <br />
+                 <p>The latest ticket INC0023462 was updated on Sep 30, 2013 by Chris Sajewicz.</p>     
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script src="js/theme.js"></script>
+    <!-- morrisjs -->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="js/morris.min.js"></script>
+
+    <script type="text/javascript">
+        // Morris Donut Chart
+        Morris.Donut({
+            element: 'hero-donut',
+            data: [
+                { label: 'Active', value: 3 },
+                { label: 'Resolved', value: 2 },
+                { label: 'Waiting on Customer', value: 1 }
+                         ],
+            colors: ["#30a1ec", "#76bdee", "#c4dafe"],
+            formatter: function (y) { return y + ' Incident(s)' }
+        });
+
+        $(document).ready(function () {
+            $('#example').dataTable({
+                "sPaginationType": "full_numbers"
+            });
+        });
+    </script>
+</body>
+</html>

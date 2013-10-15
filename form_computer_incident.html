@@ -1,0 +1,280 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>New Incident</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet">
+
+    <!-- libraries -->
+   <link href="css/lib/uniform.default.css" type="text/css" rel="stylesheet">
+    <link href="css/lib/select2.css" type="text/css" rel="stylesheet">
+    <link href="css/lib/bootstrap.datepicker.css" type="text/css" rel="stylesheet">
+    <link href="css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="css/compiled/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled/elements.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled/icons.css">
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/compiled/user-profile.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/compiled/form-showcase.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/compiled/new-user.css" type="text/css" media="screen">
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- navbar -->
+    <header class="navbar navbar-inverse" role="banner">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="dashboard.html"><img src="img/logo.png"></a>
+        </div>
+        <ul class="nav navbar-nav pull-right hidden-xs">
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs hidden-sm" data-toggle="dropdown">
+                    Joanna Mare
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="personal-info.html">Personal info</a></li>
+                    <li><a href="signin_c.html">Logout</a></li>
+
+                </ul>
+            </li>
+            <li class="settings hidden-xs hidden-sm">
+                <a href="signin_c.html" role="button">
+                    <i class="icon-share-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div id="sidebar-nav">
+        <ul id="dashboard-menu">
+            <li>
+                <a href="dashboard.html">
+                    <i class="icon-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+              <li>
+                <a href="get_status.html">
+                    <i class="icon-check"></i>
+                    <span>Check Status</span>
+                </a>
+            </li>
+             <li class="active">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="new_incident.html">
+                    <i class="icon-bolt"></i>
+                    <span>New Incident</span>
+                </a>
+            </li>   
+            
+            <li>
+                <a href="gallery.html">
+                    <i class="icon-briefcase"></i>
+                    <span>New Request</span>
+                </a>
+            </li>
+           <li>
+                <a href="knowledge.html">
+                    <i class="icon-lightbulb"></i>
+                    <span>Knowledge Base</span>
+                </a>
+            </li>
+             <li>
+                <a href="calendar.html">
+                    <i class="icon-calendar"></i>
+                    <span>Office</span>
+                </a>
+            </li>
+
+        </ul>
+    </div>
+    <!-- end sidebar -->
+
+
+	<!-- main container -->
+    <div class="content">
+        
+      
+        <div id="pad-wrapper" class="user-profile">
+            <!-- header -->
+            <div class="row header">
+                <div class="col-md-8">
+                    <img src="img/log.png" class="avatar img-circle">
+                    <h3 class="name">Computer Incident</h3>
+                    <span class="area">Submit a new incident to Service Desk</span>
+                </div>
+                </div>
+
+            <div class="row profile">
+                
+                <div class="col-md-9 bio">
+                    <div class="profile-box">
+            <!-- FORM--------------------------------------------------------------------------------- -->
+           <div class="form-page">
+            <div class="row form-wrapper">
+                <!-- left column -->
+                <div class="col-md-12 column" style="padding-left:50px;">
+            <form action="incident_submitted.html">
+                        <div class="field-box">
+                            <label>Open on behalf of this user:</label>
+                            <div class="col-md-8">
+                                <input class="form-control inline-input" placeholder="" type="text">
+                            </div>
+                        </div>
+                           <div class="field-box">
+                            <label>Do you currently have internet connection?</label>
+                            <div class="col-md-8">
+                                <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="Radio1" value="option1" checked>
+                                    Yes
+                                </label>
+                                <label class="radio">
+                                    <input type="radio" name="optionsRadios" id="Radio2" value="option2">
+                                   No
+                                </label>
+                            </div>                                
+                        </div>
+                               <div class="field-box">
+                            <label>Impact:</label>
+                            <div class="ui-select">
+                                <select>
+                                    <option selected>1-High</option>
+                                    <option>2-Medium</option>
+                                    <option>3-Low</option>
+                                </select>
+                            </div>
+                        </div>       <div class="field-box">
+                            <label>Urgency:</label>
+                            <div class="ui-select">
+                                <select>
+                                    <option >1-High</option>
+                                    <option>2-Medium</option>
+                                    <option selected>3-Low</option>
+                                </select>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field-box">
+                            <label>Type of Device:</label>
+                            <div class="col-md-8">
+                            <label class="radio">
+                              <input type="checkbox" id="Checkbox1" value="option1"> Laptop
+                            </label>
+                            <label class="radio">
+                              <input type="checkbox" id="Checkbox2" value="option1"> Tablet
+                            </label>
+                            <label class="radio">
+                              <input type="checkbox" id="Checkbox3" value="option1"> Desktop
+                            </label>
+                            </div>
+                        </div>
+
+                        <div class="field-box">
+                            <label>Where is your device now:</label>
+                                <div class="col-md-8">
+                            <label class="radio">
+                              <input type="checkbox" id="Checkbox4" value="option1"> Home
+                            </label>
+                            <label class="radio">
+                              <input type="checkbox" id="Checkbox5" value="option1"> Office
+                            </label>
+                            <label class="radio">
+                              <input type="checkbox" id="Checkbox6" value="option1"> Other (Please provide details below)
+                            </label>
+                            </div>
+                        </div>        
+                                 
+                        <div class="field-box">
+                            <label>Please describe your Issue:</label>
+                            <div class="col-md-8">
+                                <textarea class="form-control" rows="4"></textarea>
+                            </div>
+                        </div>
+                        <div class="field-box" style="text-align: right;padding-right: 160px;">
+                                <input type="submit" class="btn-glow primary" value="Submit">
+                                <span>OR</span>
+                                <input type="reset" value="Cancel" class="reset">
+                            </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+            <!-- FORM--------------------------------------------------------------------------------- -->
+                </div>
+                </div>
+         
+                <!-- side address column -->
+                <div class="col-md-3 col-xs-12 address pull-right">
+                    <h6>Notes and comments</h6>
+                     <ul>
+                        <li>Please provide any additional details that might assist the Service Desk. Please be as specific and thorough as possible.</li>
+
+                        <li>&nbsp;</li>
+                         <li>Contact Service Desk if you need any assistance</li>
+                         <li class="ico-li">
+                            <i class="ico-phone"></i>
+                             +1 301 841 1800
+                        </li>
+                         <li class="ico-li">
+                            <i class="ico-mail"></i>
+                            <a href="#">helpdesk@americancapital.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main container -->
+
+
+	<!-- scripts -->
+    <script src="js/wysihtml5-0.3.0.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.datepicker.js"></script>
+    <script src="js/jquery.uniform.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/theme.js"></script>
+    <!-- call this page plugins -->
+    <script type="text/javascript">
+        $(function () {
+
+            // add uniform plugin styles to html elements
+            $("input:checkbox, input:radio").uniform();
+            // select2 plugin for select elements
+            $(".select2").select2({
+                placeholder: "Select a State"
+            });
+
+            // datepicker plugin
+            $('.input-datepicker').datepicker().on('changeDate', function (ev) {
+                $(this).datepicker('hide');
+            });
+                   });
+    </script>
+</body>
+</html>

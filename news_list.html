@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Knowledge Base</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet" />
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet" />
+
+    <!-- libraries -->
+    <link href="css/lib/jquery-ui-1.10.2.custom.css" rel="stylesheet" type="text/css" />
+    <link href="css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="css/compiled/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled/elements.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled/icons.css">
+
+    <!-- this page specific styles -->
+    <link href="css/lib/jquery.dataTables.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/compiled/datatables.css" type="text/css" media="screen" />
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/compiled/user-profile.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/compiled/ui-elements.css" type="text/css" media="screen">
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- lato font -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900,300italic,400italic,700italic,900italic' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- navbar -->
+    <header class="navbar navbar-inverse" role="banner">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="dashboard.html"><img src="img/logo.png"></a>
+        </div>
+        <ul class="nav navbar-nav pull-right hidden-xs">
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs hidden-sm" data-toggle="dropdown">
+                    Joanna Mare
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="personal-info.html">Personal info</a></li>
+                    <li><a href="signin_c">Logout</a></li>
+
+                </ul>
+            </li>
+            <li class="settings hidden-xs hidden-sm">
+                <a href="signin_c.html" role="button">
+                    <i class="icon-share-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div id="sidebar-nav">
+              <ul id="dashboard-menu">
+            <li>
+                <a href="dashboard.html">
+                    <i class="icon-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>   
+              <li>
+                <a href="get_status.html">
+                    <i class="icon-check"></i>
+                    <span>Check Status</span>
+                </a>
+            </li>
+                     
+            <li>
+                <a href="new_incident.html">
+                    <i class="icon-bolt"></i>
+                    <span>New Incident</span>
+                </a>
+            </li>
+            
+            <li>
+                <a href="new_request.html">
+                    <i class="icon-briefcase"></i>
+                    <span>New Request</span>
+                </a>
+            </li>
+            <li class="active">
+                <a href="knowledge.html">
+                            <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                    <i class="icon-lightbulb"></i>
+                    <span>Knowledge Base</span>
+                </a>
+            </li>
+             <li>
+                <a href="office.html">
+                    <i class="icon-calendar"></i>
+                    <span>Office</span>
+                </a>
+            </li>
+           </ul>
+    </div>
+    <!-- end sidebar -->
+
+
+	<!-- main container -->
+    <div class="content">
+
+        <!-- upper main stats -->
+       
+        <!-- end upper main stats -->
+
+<div id="pad-wrapper" class="user-profile">
+            <!-- header -->
+            <div class="row header">
+                <div class="col-md-8">
+                    <img src="img/log.png" class="avatar img-circle">
+                    <h3 class="name">AMERICAN CAPITAL IT Office</h3>
+                    <span class="area">Knowledge Base</span>
+                </div>
+                
+            </div>
+
+            <div class="row profile">
+                <!-- bio, new note & orders column -->
+                <div class="col-md-9 bio">
+                    <div class="profile-box">
+                        <!-- biography -->
+                        <div class="col-md-12 section">
+                            <h6>News and Announcements</h6>
+                            <p>Complete list of news and announcements from IT Department.</p>
+                            <br />
+
+                <div class="col-md-12">
+
+                    <table cellpadding="0" cellspacing="0" border="0" class="" id="example">
+                        <thead>
+                            <tr role="row">
+                                <th tabindex="0" rowspan="1" colspan="1">Published
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1"> Description
+                                </th>
+                                <th tabindex="0" rowspan="1" colspan="1">Published by
+                                </th>
+
+                            </tr>
+                        </thead>
+                        
+                        <tbody>
+                            <tr>
+                                <td>Sept 26, 2013</td>
+                                <td><a href="news_article.html">IT is rolling out an upgrade to Microsoft Office (Outlook, Word, Excel, PowerPoint, etc.) in the near future.</a></td>
+                                <td class="center">  Rajni Saund</td>
+                            </tr>
+                            <tr>
+                                <td>Sept 18, 2013</td>
+                                <td><a href="news_article.html">Apple will release the iOS 7 Software update tomorrow. This update contains new features and enhancements.</a></td>
+                                <td class="center"> Neil Clements</td>
+                            </tr>
+                            <tr>
+                                <td>Aug 5, 2013</td>
+                                <td><a href="news_article.html">IT will be performing maintenance on the Saleslogix application beginning Friday evening at 6pm EDT.</a></td>
+                                <td class="center"> Andrew Pishchulin</td>
+                            </tr>
+
+          
+                        </tbody>
+                    </table>
+
+                </div>
+      
+
+                         </div>
+                    </div>
+                </div>
+
+                <!-- side address column -->
+ <div class="col-md-3 col-xs-12 address pull-right">
+                    <h6>Address</h6>
+                    <iframe width="300" height="133" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?output=embed"></iframe>
+                    <ul>
+                        <li></li>
+                            <li>&nbsp;2 Bethesda Metro Center, </li>
+                        <li>Bethesda, MD 20814,</li>
+                        <li>United States.</li>
+                        <li class="ico-li">
+                            <i class="ico-phone"></i>
+                            +1 301 841 1800
+                        </li>
+                         <li class="ico-li">
+                            <i class="ico-mail"></i>
+                            <a href="#">helpdesk@americancapital.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+	<!-- scripts -->
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-ui-1.10.2.custom.min.js"></script>
+    <!-- knob -->
+    <script src="js/jquery.knob.js"></script>
+    <!-- flot charts -->
+    <script src="js/jquery.flot.js"></script>
+    <script src="js/jquery.flot.stack.js"></script>
+    <script src="js/jquery.flot.resize.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/jquery.dataTables.js"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function () {
+            $('#example').dataTable({
+                "sPaginationType": "full_numbers"
+            });
+        });
+    </script>
+</body>
+</html>

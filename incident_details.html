@@ -1,0 +1,319 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Incident Details</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+    <!-- bootstrap -->
+    <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap/bootstrap-overrides.css" type="text/css" rel="stylesheet">
+
+    <!-- libraries -->
+   <link href="css/lib/uniform.default.css" type="text/css" rel="stylesheet">
+    <link href="css/lib/select2.css" type="text/css" rel="stylesheet">
+    <link href="css/lib/bootstrap.datepicker.css" type="text/css" rel="stylesheet">
+    <link href="css/lib/font-awesome.css" type="text/css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link rel="stylesheet" type="text/css" href="css/compiled/layout.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled/elements.css">
+    <link rel="stylesheet" type="text/css" href="css/compiled/icons.css">
+    
+    <!-- this page specific styles -->
+    <link rel="stylesheet" href="css/compiled/user-profile.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="css/compiled/form-showcase.css" type="text/css" media="screen">
+    <link rel="stylesheet" href="css/compiled/new-user.css" type="text/css" media="screen">
+    <!-- open sans font -->
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+     <!-- navbar -->
+    <header class="navbar navbar-inverse" role="banner">
+        <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" id="menu-toggler">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
+        </div>
+        <ul class="nav navbar-nav pull-right hidden-xs">
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle hidden-xs hidden-sm" data-toggle="dropdown">
+                    Your account
+                    <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="personal-info.html">Personal info</a></li>
+                    <li><a href="signin_c.html">Logout</a></li>
+
+                </ul>
+            </li>
+            <li class="settings hidden-xs hidden-sm">
+                <a href="signin_c.html" role="button">
+                    <i class="icon-share-alt"></i>
+                </a>
+            </li>
+        </ul>
+    </header>
+    <!-- end navbar -->
+
+    <!-- sidebar -->
+    <div id="sidebar-nav">
+        <ul id="dashboard-menu">
+            <li>
+                <a href="dashboard.html">
+                    <i class="icon-home"></i>
+                    <span>Home</span>
+                </a>
+            </li>
+              <li>
+                <a href="get_status.html">
+                    <i class="icon-check"></i>
+                    <span>Check Status</span>
+                </a>
+            </li>
+             <li class="active">
+                <div class="pointer">
+                    <div class="arrow"></div>
+                    <div class="arrow_border"></div>
+                </div>
+                <a href="new_incident.html">
+                    <i class="icon-bolt"></i>
+                    <span>New Incident</span>
+                </a>
+            </li>   
+            
+            <li>
+                <a href="gallery.html">
+                    <i class="icon-briefcase"></i>
+                    <span>New Request</span>
+                </a>
+            </li>
+             <li>
+                <a href="calendar.html">
+                    <i class="icon-calendar"></i>
+                    <span>Office</span>
+                </a>
+            </li>
+            <li>
+                <a href="calendar.html">
+                    <i class="icon-shopping-cart"></i>
+                    <span>Request Services</span>
+                </a>
+            </li>
+             <li>
+                <a href="calendar.html">
+                    <i class="icon-desktop"></i>
+                    <span>Request Hardware</span>
+                </a>
+            </li><li>
+                <a href="calendar.html">
+                    <i class="icon-download-alt"></i>
+                    <span>Request Software</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- end sidebar -->
+
+
+	<!-- main container -->
+    <div class="content">
+        
+      
+        <div id="pad-wrapper" class="user-profile">
+            <!-- header -->
+            <div class="row header">
+                <div class="col-md-8">
+                    <img src="img/log.png" class="avatar img-circle">
+                    <h3 class="name">Incident</h3>
+                    <span class="area">Incident Info</span>
+                </div>
+                </div>
+
+            <div class="row profile">
+                
+                <div class="col-md-9 bio">
+                  <div class="profile-box">
+            <!-- FORM--------------------------------------------------------------------------------- -->
+           <div class="form-page">
+            <div class="row form-wrapper">
+                <!-- left column -->
+            <form action="incident_submitted.html">
+                <div class="col-md-12 column" style="padding-left:50px;">
+
+                        <div class="field-box">
+                            <label>Number:</label>
+                            <div class="col-md-8">
+                                <input class="form-control inline-input" placeholder="INC0020383" type="text" readonly="readonly">
+                            </div>
+                        </div>
+                         <div class="field-box">
+                            <label>Caller:</label>
+                            <div class="col-md-8">
+                                <input class="form-control inline-input" placeholder="Mark Lindsey" type="text" readonly="readonly">
+                            </div>
+                        </div>
+                         <div class="field-box">
+                            <label>Category:</label>
+                            <div class="ui-select">
+                                <select disabled>
+                                    <option selected>Software</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field-box">
+                            <label>Subcategory:</label>
+                            <div class="ui-select">
+                                <select disabled>
+                                    <option selected>Application</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field-box">
+                            <label>Priority:</label>
+                            <div class="ui-select">
+                                <select disabled>
+                                    <option selected>3 - Moderate</option>
+                                </select>
+                            </div>
+                        </div>
+                     
+                       <div class="field-box">
+                            <label>Opened:</label>
+                            <div class="col-md-8">
+                                <input class="form-control inline-input" placeholder="2013-10-10 20:52:26" type="text" readonly="readonly">
+                            </div>
+                        </div>
+                         <div class="field-box">
+                            <label>State:</label>
+                            <div class="ui-select">
+                                <select disabled>
+                                    <option selected>Active</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="field-box">
+                            <label>Assigned group:</label>
+                            <div class="col-md-8">
+                                <input class="form-control inline-input" placeholder="BA" type="text" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="field-box">
+                            <label>Assigned to:</label>
+                            <div class="col-md-8">
+                                <input class="form-control inline-input" placeholder="Andy Mattocks" type="text" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="field-box">
+                            <label>Acknowledgement:</label>
+                            <div class="col-md-8">
+                                <input class="form-control inline-input" placeholder="2013-10-11 09:44:15" type="text" readonly="readonly">
+                            </div>
+                        </div>
+                        <div class="field-box">
+                            <label>Short Description:</label>
+                            <div class="col-md-8">
+                                <input class="form-control inline-input" placeholder="Boost Sharepoint site - new folder permissions" type="text" readonly="readonly">
+                            </div>
+                        </div>
+                 <div class="field-box">
+                            <label>Description:</label>
+                            <div class="col-md-8">
+                                <pre>
+On the Boost Share Point portal: https://funds.acas.com/Delta/boost/default.aspx
+
+Folders: Boost > Shared Documents > EPM Project Documents > 2. Requirements and Design > FDM > Trial Balances
+Can you give Read Only permissions to the folders (and all files within the folders)
+*       TB_CurrentReview
+*       TB_OldVersions
+*       TB_OtherFiles
+And write permissions to the folder (and all files within the folder)
+*       TB_ToBeReviewed
+
+         For the following people:
+*       Mark Lindsey
+*       Brandon Coleman
+*       Richard Smith
+*       Rustey Emmet
+*       Robert Carraway
+*       David Dipippo
+*       Gregory Shanahan,
+*       Gregory Yaw,
+*       Dan Grimely,
+*       Tom Wood,
+*       Seema Shah,
+*       Wes Maclagan
+
+Please give full permissions to all the folders listed above to the following users
+*       Andy Mattocks
+*       Jerri McConnell
+
+                               </pre>
+                            </div>
+                </div>
+                </div>
+                                                         </form>
+            </div>
+
+            </div>
+            <!-- FORM--------------------------------------------------------------------------------- -->
+                </div>
+                </div>
+         
+                <!-- side address column -->
+                <div class="col-md-3 col-xs-12 address pull-right">
+                    <h6>Contact Service Desk if you need any assistance</h6>
+                     <ul>
+                         <li class="ico-li">
+                            <i class="ico-phone"></i>
+                             +1 301 841 1800
+                        </li>
+                         <li class="ico-li">
+                            <i class="ico-mail"></i>
+                            <a href="#">helpdesk@americancapital.com</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end main container -->
+
+
+	<!-- scripts -->
+    <script src="js/wysihtml5-0.3.0.js"></script>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.datepicker.js"></script>
+    <script src="js/jquery.uniform.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/theme.js"></script>
+    <!-- call this page plugins -->
+    <script type="text/javascript">
+        $(function () {
+
+            // add uniform plugin styles to html elements
+            $("input:checkbox, input:radio").uniform();
+            // select2 plugin for select elements
+            $(".select2").select2({
+                placeholder: "Select a State"
+            });
+
+            // datepicker plugin
+            $('.input-datepicker').datepicker().on('changeDate', function (ev) {
+                $(this).datepicker('hide');
+            });
+                   });
+    </script>
+</body>
+</html>
