@@ -82,7 +82,12 @@ strong a,
 .rpw_posts_widget.style-2 .body a:hover h3,
 .rpw_posts_widget.style-2 .body .comment-number:hover,
 .header-info-widgets li .icon-container{
-    color: #117dc2;
+/*    color: #117dc2;*/
+color: rgba(59, 71, 82, 1);
+/*color: rgba(244, 115, 56, 1);*/
+
+/*color: #fea809;*/
+
 }
 
 /* LIGHTER COLOR */
@@ -131,7 +136,7 @@ strong a,
 .service-box-5:hover .icon-container,
 .service-box-8:hover .icon-container,
 .service-box-10 .icon-container,
-.service-box-11:hover,
+/*.service-box-11:hover,*/
 .list-icons-merged li:nth-child(2n + 1) .icon,
 .pricing-table-col.selected .head .title-container,
 .pricing-table-2-col.selected .price,
@@ -153,6 +158,10 @@ strong a,
 #header.header-type-2 .navbar-default .navbar-nav > .current-menu-item > a{
     background-color: #117dc2;
 }
+
+.service-box-11:hover {
+	background-color: rgba(24, 39, 51, 0.8);
+	}
 
 .newsletter .submit:hover, 
 .wpcf7-submit:hover,
@@ -208,7 +217,7 @@ strong a,
 #header.header-type-1 .navbar-default .navbar-nav > li>a:hover, 
 #header.header-type-1 .navbar-default .navbar-nav > li >a:focus,
 .hint--theme-color.hint--top:before{
-    border-top-color: #117dc2;
+    border-top-color: r;
 }
 
 .blockquote-style-1,

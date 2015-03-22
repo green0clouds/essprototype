@@ -467,7 +467,9 @@ h5,
 h6 {
   font-family: 'Raleway', 'Open Sans', Arial, sans-serif;
   font-weight: 500;
-  color: #252525;
+ /* color: #252525;*/
+/*  color: rgb(100,110,120);*/
+color: rgba(59, 71, 82, 1); 
   margin-top: 0;
   margin-bottom: 15px;
 }
